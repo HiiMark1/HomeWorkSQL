@@ -5,7 +5,7 @@ WITH RECURSIVE f AS (
 
  UNION
 
- SELECT farmer.id, farmer.parent_id, farmer.name, farmer.farm_id
+ SELECT farmer.id, farmer.name, farmer.farm_id, farmer.parent_id
  FROM farmer
  JOIN f
  ON farmer.parent_id = f.id

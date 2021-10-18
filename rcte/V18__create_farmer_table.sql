@@ -2,10 +2,10 @@ CREATE TABLE farmer (
 id SERIAL PRIMARY KEY,
 name CHARACTER VARYING(255),
 farm_id INTEGER REFERENCES farm(farm_id),
-parent_id INTEGER REFERENCES managers(id)
+parent_id INTEGER REFERENCES farmer(id)
 );
 
-INSERT INTO managers VALUES 
+INSERT INTO farmer VALUES 
 (1, 'Krol', 1, null),
 (2, 'NeKrol', 1, 1),
 (3, 'MaybeKrol', 1, 1),
