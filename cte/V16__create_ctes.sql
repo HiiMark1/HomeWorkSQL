@@ -1,3 +1,5 @@
+
+--Выполненные заказы (требуемое кол-во продуктов равно 0)
 WITH completed_orders (id) AS (
  SELECT orders_id, number
  FROM orders
